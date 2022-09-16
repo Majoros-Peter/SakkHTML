@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(56, 56, 56);
+}
+
+table{
+    border: 10px ridge white;
+    border-spacing: 0px;
+    margin: auto;
+    margin-top: 4%;
+}
+
+img{
+    background-color: transparent !important;
+}
+
+td{
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+
+tr:nth-child(even) :nth-child(odd), tr:nth-child(odd) :nth-child(even){
+    background-color: black;
+}
+
+tr:nth-child(even) :nth-child(even), tr:nth-child(odd) :nth-child(odd){
+    background-color: white;
+}
+
+
+/*Hoverek*/
+
+
+tr:nth-child(even) :nth-child(odd):hover, tr:nth-child(odd) :nth-child(even):hover{
+    background-color: rgb(56, 56, 56);
+    width: 99px;
+    height: 99px;
+}
+
+tr:nth-child(even) :nth-child(even):hover, tr:nth-child(odd) :nth-child(odd):hover{
+    background-color: lightgray;
+    width: 99px;
+    height: 99px;
+}
+
+td:hover{
+    border: 2px ridge red;
+}
